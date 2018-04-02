@@ -1,4 +1,4 @@
-package Exercicio7;
+package AS1.Exercicio5;
 
 import java.io.BufferedReader;
 import java.io.DataOutputStream;
@@ -7,18 +7,18 @@ import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.io.LineNumberReader;
 import java.io.UnsupportedEncodingException;
-import static java.lang.System.in;
 
 /**
- *
+ * Implementa o exercício 5
  * @author Samuel
  */
-public class Exercicio7 {
+public class Exercicio5 {
+    
     /**
-     * Executa a função tranformaEmBinario
+     * Executa a função tranformaEmBinario através do primeiro e do segundo argumento
      * @param args the command line arguments
+     * @throws java.io.FileNotFoundException
      */
     public static void main(String[] args) throws FileNotFoundException {
         try{
@@ -30,8 +30,12 @@ public class Exercicio7 {
     
     /**
      * Método que grava os dados de um arquivo em outro no formato binário
+     * Cada linha do arquivo lido será gravada no arquivo binário, no entanto antes de do conteúdo cada linha
+     * é gravado o tamanho da linha.
      * @param arqEntrada entrada de uma String com o nome do arquivo a ser lido.
      * @param arqSaida entrada de uma String com o nome do arquivo a ser gravado
+     * @throws java.io.FileNotFoundException
+     * @throws java.io.UnsupportedEncodingException
      * @throws IllegalArgumentException caso o nome dos arquivos estejam em branco.
      */
     public static void tranformaEmBinario(String arqEntrada, String arqSaida) throws FileNotFoundException, UnsupportedEncodingException, IOException{
@@ -51,33 +55,11 @@ public class Exercicio7 {
         FileOutputStream fos = new FileOutputStream(arqSaida);
         DataOutputStream dos = new DataOutputStream(fos);
         
-        // Primeiro grava o indice
-        int qntLinhas = 0;
         String linha;
-        while((linha = br.readLine()) != null){
-            // Soma a quantidade de linhas
-            qntLinhas++;
-        }
-        // Grava a quantidade de linhas
-        dos.writeInt(qntLinhas);
-        // Volta ao início do arquivo
-        fis.getChannel().position(0);
-        br = new BufferedReader(new InputStreamReader(fis));
-        
-        // Agora grava o tamanho de cada linha
         while((linha = br.readLine()) != null){
             byte[] texto = linha.getBytes("UTF-8");
             // Grava o tamanho da linha
             dos.writeInt(texto.length);
-        }
-        
-        // Volta ao início do arquivo
-        fis.getChannel().position(0);
-        br = new BufferedReader(new InputStreamReader(fis));
-        // Grava o conteudo de cada linha
-        while((linha = br.readLine()) != null){
-            // Pega o texto
-            byte[] texto = linha.getBytes("UTF-8");
             // Grava os bytes do texto
             dos.write(texto, 0, texto.length);
         }

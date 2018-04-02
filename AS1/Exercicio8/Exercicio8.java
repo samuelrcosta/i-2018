@@ -1,4 +1,4 @@
-package Exercicio8;
+package AS1.Exercicio8;
 
 import java.io.DataInputStream;
 import java.io.FileInputStream;
@@ -8,13 +8,13 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 
 /**
- *
+ * Implementa o exercício 8
  * @author Samuel
  */
 public class Exercicio8 {
     
     /**
-     * Executa a função lerArquivoBinario
+     * Executa a função lerArquivoBinario através do primeiro e do segundo argumento.
      * @param args the command line arguments
      * @throws java.io.FileNotFoundException
      */
@@ -27,9 +27,12 @@ public class Exercicio8 {
     }
     
     /**
-     * Método que lê um arquivo binário gravado no padrão do exercício 7
+     * Método que lê um arquivo binário gravado no padrão do exercício 7 e 
+     * reverte os dados em binário para os dados originais.
      * @param arq entrada de uma String com o nome do arquivo a ser lido.
      * @param linha entrada de um int com o número da linha a ser lida.
+     * @return dados convertidos
+     * @throws java.io.FileNotFoundException
      * @throws IllegalArgumentException caso o nome dos arquivos estejam em branco.
      */
     public static String lerArquivoBinario(String arq, int linha) throws FileNotFoundException{

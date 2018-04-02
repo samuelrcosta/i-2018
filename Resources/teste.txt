@@ -1,0 +1,42 @@
+Documento de texto
+para Teste
+Dos exercicios
+Pula linha
+Linha Pula
+Teste em UTF-8
+aaaaaaaaaaaaaaaaaaaaaa
+bbbbbbbbbbbbbbb
+cccccccccccccccccccccccccccccc
+ddddddddddddddddddddd
+eeeeeeeeeeeeeeeeeeeeeee
+fffffffffffffffffffff
+ggggggggggggggggggggg
+hhhhhhhhhhhhhhhhhhh
+iiiiiiiiiiiiiiiiiiii
+jjjjjjjjjjjjjjjjjjj
+kkkkkkkkkkkkkkkkkkkk
+llllllllllllllllllll
+mmmmmmmmmmmmmmmmmmmmmm
+nnnnnnnnnnnnnnnnn
+oooooooooooooooooo
+pppppppppppppppppppp
+qqqqqqqqqqqqqqqqqqqqqqqqqq
+rrrrrrrrrrrrrrrrr
+sssssssssssssssssss
+ttttttttttttttttttt
+uuuuuuuuuuuuuuuuuu
+vvvvvvvvvvvvvvvvvv
+xxxxxxxxxxxxxxxxxxxxxx
+wwwwwwwwwwwwwwwwwww
+yyyyyyyyyyyyyyy
+zzzzzzzzzzzzzzzz
+1111111111111111
+22222222222222
+33333333333333
+44444444444444444444
+55555555555555555555
+666666666666666666
+77777777777777777777
+888888888888888888888
+99999999999999999
+00000000000000000

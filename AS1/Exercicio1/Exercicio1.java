@@ -1,4 +1,4 @@
-package Exercicio1;
+package AS1.Exercicio1;
 
 
 
@@ -8,12 +8,12 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 
 /**
- *
+ * Implementa o Exercício 1
  * @author Samuel
  */
 public class Exercicio1 {
     /**
-     * Executa a função lerHexa
+     * Executa a função lerHexa através do primeiro argumento
      * @param args the command line arguments
      */
     public static void main(String[] args) throws FileNotFoundException {
