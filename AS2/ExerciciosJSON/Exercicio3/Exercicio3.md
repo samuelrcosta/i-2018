@@ -1,3 +1,3 @@
 No trecho  
-`"null": nil,`  
+```"null": nil``` 
 o valor "nil" não é permitido, ele deve ser null ou "nil"
