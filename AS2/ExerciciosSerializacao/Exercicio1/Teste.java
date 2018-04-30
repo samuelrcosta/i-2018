@@ -4,7 +4,7 @@ import java.io.Serializable;
 
 /**
  * Esta classe Implementa a interface Serialize
- * Ela foi criada com intuito de realizar testes de Serialização e Desserialização. 
+ * Ela foi criada com intuito de realizar testes de Serialização. 
  * @author Samuel
  */
 public class Teste implements Serializable {
