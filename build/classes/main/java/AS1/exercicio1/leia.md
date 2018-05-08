@@ -1,0 +1,1 @@
+Na leitura de um arquivo java .class sempre será retornado a String Hex "cafebabe".
