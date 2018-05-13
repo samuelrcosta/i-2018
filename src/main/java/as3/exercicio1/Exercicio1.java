@@ -10,7 +10,6 @@ import java.io.BufferedWriter;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
-import java.io.FileReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
@@ -24,16 +23,19 @@ import java.io.OutputStreamWriter;
 public class Exercicio1 {
     
     /**
-     * Grava uma classe Teste serializada em um arquivo e então desserializa este arquivo de volta no 
-     * objeto teste
+     * Classe main que executa a função csvToXML, recebe como parâmetro um arquivo CSV
+     * e grava no mesmo diretório um arquivo com mesmo nome no formato XML.
      * @param args the command line arguments
-     * @throws java.io.IOException
-     * @throws java.lang.ClassNotFoundException
      */
     public static void main(String[] args) {
-        csvToXml("src/resources/testeCSV.csv");
+        csvToXml(args[0]);
     }
     
+    /**
+     * Esta classe recebe como parâmetro um arquivo CSV
+     * e grava no mesmo diretório um arquivo com mesmo nome no formato XML.
+     * @param path String para o arquivo CSV
+     */
     public static void csvToXml(String path){
         String arquivoCSV = path;
         String newPath = path.replace(".csv", ".xml");
@@ -51,30 +53,33 @@ public class Exercicio1 {
                     XML += "<nome>" + csv[csv.length-2] + "</nome>";
                     XML += "<email>" + csv[csv.length-2] + "</email>";
                     XML += "</aluno>";
-                    System.out.println(csv[csv.length-2]);
                 }
                 contador++;
             }
             XML += "</alunos>";
             escritor(newPath, XML);
         }catch(FileNotFoundException e){
-            e.printStackTrace();
         }catch (IOException e){
-            e.printStackTrace();
         }finally{
             if(br != null){
                 try {
                     br.close();
                 } catch (IOException e) {
-                    e.printStackTrace();
                 }
             }
         }
     }
     
+    /**
+     * Esta função recebe um arquivo e uma string de dados e grava no disco o arquivo espeficicado
+     * com os dados especificados.
+     * @param path String para o arquivo
+     * @param xml String para o conteúdo a ser gravado
+     * @throws java.io.IOException
+     */
     public static void escritor(String path, String xml) throws IOException {
-        BufferedWriter buffWrite = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(path),"UTF-8"));
-        buffWrite.append(xml + "\n");
-        buffWrite.close();
+        try (BufferedWriter buffWrite = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(path),"UTF-8"))) {
+            buffWrite.append(xml + "\n");
+        }
     }
 }

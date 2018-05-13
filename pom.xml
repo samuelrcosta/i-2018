@@ -8,23 +8,23 @@
   <packaging>jar</packaging>
 
 <!-- mvn javadoc:javadoc
-         Gera documentação do projeto
+         Gera documentaï¿½ï¿½o do projeto
          mvn test
          Executa testes
          mvn package -P cobertura
-         Compila, executa testes e elabora relatório de cobertura.
+         Compila, executa testes e elabora relatï¿½rio de cobertura.
          mvn exec:java -Dexec.mainClass="com.github.samuelrcosta.atividadesIntegracao..."
          Executa o programa exemplo
          mvn site
-         Gera relatórios para o projeto: checkstyle, PMD (caso exista falha).
-         mvn javancss:check (verifica se limite são observados)
-         mvn javancss:report (gera relatório)
+         Gera relatï¿½rios para o projeto: checkstyle, PMD (caso exista falha).
+         mvn javancss:check (verifica se limite sï¿½o observados)
+         mvn javancss:report (gera relatï¿½rio)
     -->
   
   <name>com.github.samuelrcosta:i-2018</name>
 
 <description>
-        Projeto para execução das atividades de Integração do curso de Engenharia de Software da UFG, período 2018/1.
+        Projeto para execuï¿½ï¿½o das atividades de Integraï¿½ï¿½o do curso de Engenharia de Software da UFG, perï¿½odo 2018/1.
 </description>
 
     <url>https://github.com/samuelrcosta/i-2018</url>
@@ -34,8 +34,8 @@
 <licenses>
         <license>
             <name>Creative Commons Attribution 4.0 International (CC BY 4.0)</name>
-            <comments>A atribuição deve conter, explicitamente, a seguinte linha:
-                Copyright (c) 2018. Samuel Rocha Costa - Instituto de Informática (UFG)
+            <comments>A atribuiï¿½ï¿½o deve conter, explicitamente, a seguinte linha:
+                Copyright (c) 2018. Samuel Rocha Costa - Instituto de Informï¿½tica (UFG)
             </comments>
             <url>https://creativecommons.org/licenses/by/4.0/</url>
         </license>
@@ -46,7 +46,7 @@
             <id>samuelrcosta</id>
             <name>Samuel Rocha Costa</name>
             <email>samu.rcosta@gmail.com</email>
-            <organization>Instituto de Informática (UFG)</organization>
+            <organization>Instituto de Informï¿½tica (UFG)</organization>
             <organizationUrl>http://www.inf.ufg.br</organizationUrl>
         </developer>
 </developers>
@@ -64,7 +64,7 @@
 
 <build>
 
-        <!-- Define o nome do arquivo a ser gerado (.jar é acrescentada) -->
+        <!-- Define o nome do arquivo a ser gerado (.jar ï¿½ acrescentada) -->
         <finalName>integracaoAplicacoes</finalName>
 
         <plugins>
@@ -134,9 +134,9 @@
                 </executions>
             </plugin>
 
-            <!-- Copia dependencias para "jars", não incluída no jar.    -->
-            <!-- Ou seja, você deve obter exemplo.jar e o diretório jars -->
-            <!-- para que a aplicação seja executada satisfatoriamente.  -->
+            <!-- Copia dependencias para "jars", nï¿½o incluï¿½da no jar.    -->
+            <!-- Ou seja, vocï¿½ deve obter exemplo.jar e o diretï¿½rio jars -->
+            <!-- para que a aplicaï¿½ï¿½o seja executada satisfatoriamente.  -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-jar-plugin</artifactId>
@@ -155,7 +155,7 @@
         </plugins>
     </build>
 
-    <!-- mvn site (gera relatório em Project Report -->
+    <!-- mvn site (gera relatï¿½rio em Project Report -->
     <reporting>
         <plugins>
             <plugin>
@@ -255,7 +255,13 @@
             </build>
 
         </profile>
-    </profiles>    
-
+    </profiles>
+    <dependencies>
+        <dependency>
+            <groupId>com.fasterxml.jackson.dataformat</groupId>
+            <artifactId>jackson-dataformat-xml</artifactId>
+            <version>2.9.0</version>
+          </dependency>
+    </dependencies>
 
 </project>
