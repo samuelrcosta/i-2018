@@ -5,4 +5,8 @@
 
 ### Repositório criado para entrega de atividades da disciplina
 
-### [Atividades Individuais do Tópico 1](https://github.com/samuelrcosta/i-2018/tree/master/Atividades%20T%C3%B3pico%201)
+### [Atividades Individuais do Tópico 1](https://github.com/samuelrcosta/i-2018/tree/master/src/main/java/as1)
+
+### [Atividades Individuais do Tópico 2](https://github.com/samuelrcosta/i-2018/tree/master/src/main/java/as2)
+
+### [Atividades Individuais do Tópico 3](https://github.com/samuelrcosta/i-2018/tree/master/src/main/java/as3)
