@@ -1,0 +1,107 @@
+<Individuo>
+  <nomes>
+    <titulos>Sr.</titulos>
+    <nomes>Samuel</nomes>
+    <sobrenomes>Rocha Costa</sobrenomes>
+    <sufixos>Sufixos teste</sufixos>
+    <preferido>Costa</preferido>
+    <usoCondicional>Sim</usoCondicional>
+    <utilizacao>
+      <uso>Utilizacao</uso>
+      <data_inicial>09/04/2017</data_inicial>
+      <data_final>10/04/2018</data_final>
+    </utilizacao>
+    <representacao>
+      <utilizacao>Teste Utilização</utilizacao>
+      <alternativa>Teste alternativa</alternativa>
+    </representacao>
+  </nomes>
+  <endereco>
+    <bairro>Centro</bairro>
+    <distrito>Centro Oeste</distrito>
+    <codigo_municipio>15</codigo_municipio>
+    <estado>GO</estado>
+    <cep>751212</cep>
+    <caixa_postal>75400000</caixa_postal>
+    <pais>BR</pais>
+    <tipo>Principal</tipo>
+    <linha_de_endereco>
+      <ordem>Ordem 1</ordem>
+      <linha>Linha 1</linha>
+    </linha_de_endereco>
+    <data_inicio>
+      <data>10/05/2018</data>
+      <acuracia>teste</acuracia>
+    </data_inicio>
+    <data_fim>
+      <data>14/05/2018</data>
+      <acuracia>teste</acuracia>
+    </data_fim>
+  </endereco>
+  <identificador>
+    <designacao>Teste</designacao>
+    <area>Area central</area>
+    <emissor>SSP-GO</emissor>
+    <data>14/05/2018</data>
+    <tipo>ID912</tipo>
+    <utilizacao>
+      <uso>Utilizacao</uso>
+      <data_inicial>09/04/2017</data_inicial>
+      <data_final>10/04/2018</data_final>
+    </utilizacao>
+    <titulo_eleitoral>
+      <secao>00124-121</secao>
+      <zona>009</zona>
+    </titulo_eleitoral>
+    <certidao>
+      <tipo>Nascimento</tipo>
+      <cartorio>Cartório Central</cartorio>
+      <livro>Livro 055-124</livro>
+      <folha>100</folha>
+      <termo>01285-12</termo>
+    </certidao>
+    <ctps>
+      <serie>001</serie>
+      <estado>Ativo</estado>
+    </ctps>
+    <vinculo>
+      <relacionamento>relacionamento teste</relacionamento>
+      <data_inicial>10/01/2017</data_inicial>
+      <data_final>10/06/2018</data_final>
+    </vinculo>
+  </identificador>
+  <vinculo>
+    <relacionamento>relacionamento teste</relacionamento>
+    <data_inicial>10/01/2017</data_inicial>
+    <data_final>10/06/2018</data_final>
+  </vinculo>
+  <comunicacao>
+    <meio>Meio teste</meio>
+    <preferencia>PreferÊncia Teste</preferencia>
+    <detalhe>Detalhe Teste</detalhe>
+    <uso>Uso teste</uso>
+  </comunicacao>
+  <DadoDemografico>
+    <sexo>M</sexo>
+    <mae>Maria</mae>
+    <pai>José</pai>
+    <situacao_familiar>Situação teste</situacao_familiar>
+    <raca>Pardo</raca>
+    <comentario>Comentario teste</comentario>
+    <fonte_notificacao_obito>Família</fonte_notificacao_obito>
+    <pluraridade>teste pluraridade</pluraridade>
+    <ordem>Ordem teste</ordem>
+    <seguimento>Seguimento teste</seguimento>
+    <nascimento>
+      <data>27/01/1998</data>
+      <acuracia>teste</acuracia>
+    </nascimento>
+    <nacionalidade>
+      <municipio>Goiânia</municipio>
+      <estado>GO</estado>
+      <pais>Brasil</pais>
+      <data_entrada>10/05/1998</data_entrada>
+    </nacionalidade>
+  </DadoDemografico>
+</Individuo>
+
